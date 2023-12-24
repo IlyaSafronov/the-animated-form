@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <form data-multi-step>
+    <div class="card" data-step="1">
+      <h3 class="step-title">This is step one</h3>
+      <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+      </div>
+      <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+      </div>
+      <button type="button">Next</button>
+  </div>
+    <div class="card" data-step="2">
+      <h3 class="step-title">This is step two</h3>
+      <div class="form-group">
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address">
+      </div>
+      <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" name="city" id="city">
+      </div>
+      <div class="form-group">
+        <label for="zipcode">Zip Code</label>
+        <input type="text" name="zipcode" id="zipcode">
+        </div>
+      <button type="button">Previous</button>
+      <button type="button">Next</button>
+    </div>
+    <div class="card" data-step="3">
+      <h3 class="step-title">This is step three</h3>
+      <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname">
+      </div>
+      <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname" id="lastname">
+      </div>
+      
+      <button type="button">Previous</button>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
