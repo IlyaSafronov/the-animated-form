@@ -5,6 +5,11 @@
   padding: .5rem;
   max-width: 300px;
   margin: 0 auto;
+  /* display: none; */
+  transform: translateX(200%);
+  opacity: 0;
+  transition: 500ms ease-in-out;
+ 
 }
 
 .form-group {
@@ -35,4 +40,16 @@
   margin: 0;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+.card.active {
+  /* display: block; */
+  position: static;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.multi-step-form {
+  overflow: hidden;
+  position: relative;
 }
